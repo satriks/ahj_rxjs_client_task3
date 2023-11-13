@@ -18,11 +18,11 @@ main{
   width: 40%;
 }
 
-.stats__header, .tasks__header, .stats , .tasks{
+.stats__header, .tasks__header, .stats , .task{
   border: 1px solid black;
 }
 
-.stats__header, .stats, .tasks, .tasks__header{
+.stats__header, .stats, .task, .tasks__header{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -35,12 +35,12 @@ main{
   margin-top: 10px;
 }
 
-.tasks__header, .tasks{
+.tasks__header, .task{
   justify-content: flex-start;
 
 }
 
-.stats, .tasks{
+.stats, .task{
   margin: 1px;
   padding-right: 15px;
   background-color: lightgray;
@@ -60,6 +60,9 @@ main{
 .tasks__name{
   position: relative;
 }
+.task{
+  position: relative;
+}
 
 .custom-checkbox{
   opacity: 0;
@@ -76,8 +79,8 @@ main{
   border-radius: 50%;
   border: 1px solid black;
   position: absolute;
-  left: -30px;
-  top: 2px;
+  left: 15px;
+  top: 5px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 50% 50%
@@ -90,8 +93,8 @@ main{
   border-radius: 50%;
   border: 1px solid black;
   position: absolute;
-  left: -30px;
-  top: 2px;
+  left: 15px;
+  top: 5px;
   background-image: url('../pic/arrow.png');
   
 }
